@@ -1,0 +1,16 @@
+nav, a, li {
+  background: red;
+}
+
+li {
+  color: blue;
+  background: white;
+  border-radius: 2px;
+}
+
+a {
+  background: green;
+  border-radius: 7px;
+}
+
+/*# sourceMappingURL=style.css.map */

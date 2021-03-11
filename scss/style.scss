@@ -1,0 +1,23 @@
+$backgroundColor: #878f99;
+$textColor: #b2ad7f;
+$text: #a2b9bc;
+@mixin rounded($px) {
+    border-radius: $px; 
+}
+
+nav {
+  background: red;
+}
+
+li {
+    @extend nav;
+    color: blue;
+    background: white;
+    @include rounded(2px);
+}
+
+a {
+    @extend nav;
+    background: green;
+    @include rounded(7px);
+}
