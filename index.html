@@ -1,29 +1,448 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>SnackShop - De vetste</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <!-- nav bar -->
+            <nav class="navbar navbar-expand-lg navbar-light navBackground">
+                <!-- nav brand -->
+                <a class="navbar-brand" href="#">
+                    <i class="fab fa-500px"></i>
+                </a>
+                <!-- nav brandname -->
+                <a class="navbar-brand" href="#">SnackShop</a>
+                <!-- collapse controll -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="   navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- nav items -->
+                <div class="collapse navbar-collapse ml-7" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
+                            Menu
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#snacks">Snacks</a>
+                                <a class="dropdown-item" href="#drinks">Dranken</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </main>
+        <div class="container container-bg">
+            <!-- carrousel -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>WeekSpecialiteiten</h1>
+                </div>
+                <div class="col-md-12">
+                    <!-- Carrousel indicators --> 
+                    <div id="carouselExampleIndicators" class="carousel slide h-75" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        </ol>
+                        <!-- carrousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/frikandel.png" class="d-block w-100"  style="height: 350px;" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/patat.png" class="d-block w-100" style="height: 350px;" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/bami.webp" class="d-block w-100" style="height: 350px;" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/viandel.png" class="d-block w-100" style="height: 350px;" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/kroket.png" class="d-block w-100" style="height: 350px;" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hamburger.png" class="d-block w-100" style="height: 350px;" alt="...">
+                            </div>
+                        </div>
+                        <!-- carrousel functionality -->
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- weekspecials -->
+            <div class="col-md-12 mt-6">
+                <div class="row">
+                    <!-- cards for weeklySpecials -->
+                    <div class="col-md-6 col-lg-4 col-sm-12 text-center mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Hamburger</h5>
+                            </div>
+                            <img src="img/hamburger.png" class="card-img-top" alt="..." style="max-height: 11rem;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12 text-center mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Patat</h5>
+                            </div>
+                            <img src="img/patat.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12 text-center mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Kroket</h5>
+                            </div>
+                            <img src="img/kroket.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- snacks -->
+            <div class="col-md-12 mt-10">
+                <div class="col-md-12 text-center" id="snacks">
+                    <h1>Snacks</h1>
+                </div>
+                <div class="row">
+                    <!-- cards for our snacks -->
+                    <div class="order-xl-4 col-xl-2 order-md-4 col-md-3 offset-md-6 offset-xl-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Hamburger</h5>
+                            </div>
+                            <img src="img/hamburger.png" class="card-img-top" alt="..." style="max-height: 11rem;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-xl-first col-xl-2 order-md-3 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Patat</h5>
+                            </div>
+                            <img src="img/patat.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-xl-5 col-xl-2 offset-xl-6 order-md-2 col-md-3 offset-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Kroket</h5>
+                            </div>
+                            <img src="img/kroket.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-xl-last col-xl-2 order-md-first col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Viandel</h5>
+                            </div>
+                            <img src="img/viandel.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-xl-2 col-xl-2 order-md-5 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Bamipuk</h5>
+                            </div>
+                            <img src="img/bami.webp" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-xl-3 col-xl-2 offset-xl-6 order-md-last col-md-3 offset-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Frikandel</h5>
+                            </div>
+                            <img src="img/frikandel.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- drinks -->
+            <div class="col-md-12 mt-10">
+                <div class="col-md-12 text-center" id="drinks">
+                    <h1>Drinks</h1>
+                </div>
+                <div class="row">
+                   <!-- cards for our drinks -->
+                    <div class="col-md-3 order-md-last order-lg-4 offset-lg-3">
+                        <div class="card" style="max-width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Hamburger</h5>
+                            </div>
+                            <img src="img/hamburger.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-5 offset-md-3 order-lg-5 offset-lg-0 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Patat</h5>
+                            </div>
+                            <img src="img/patat.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-3 offset-md-3 order-lg-last offset-lg-0 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Kroket</h5>
+                            </div>
+                            <img src="img/kroket.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-4 order-lg-3 offset-lg-3">
+                        <div class="card" style="max-width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Viandel</h5>
+                            </div>
+                            <img src="img/viandel.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-2 order-lg-2 offset-lg-3">
+                        <div class="card" style="max-width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Bamipuk</h5>
+                            </div>
+                            <img src="img/bami.webp" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-first order-lg-first">
+                        <div class="card" style="max-width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title underline">Frikandel</h5>
+                            </div>
+                            <img src="img/frikandel.png" class="card-img-top" alt="..." style="max-height: 177px;">
+                            <div class="card-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <!-- contact -->
+            <div class="col-md-12 mt-10">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li>test</li>
-        <li>test2</li>
-      </ul>
-      <a href="">nog een test</a>
-    </nav>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+                <div class="col-md-12 text-center" id="contact">
+                    <h1>Contact</h1>
+                </div>
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-6 text-center mt-5 col-xl-6 col-sm-12">
+                        <div class="card" style="max-width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-Stitle underline">Frikandel</h5>
+                            </div>
+                            <img src="img/snackbar.jpg" class="card-img-top" alt="..." style="max-height: 177px;">
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-7 text-sm-center text-lg-left contact">
+                        <img src="img/snackbar.jpg" class="img-fluid contact">
+                    </div> -->
+                    <!-- <div class="col-md-1 text-center">
+                    </div> -->
+                    <div class="col-md-6 col-lg-6 col-sm-6 text-center mt-5 col-xl-6 col-sm-12">
+                        <div class="card" style="max-width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-Stitle underline">Openingstijden</h5>
+                            </div>
+                            <div class="col-md-12 text-justify">
+                            <ul class="mt-5 contact">
+                                <li>
+                                    maandag: 15:00-23:00
+                                </li>
+                                <li>
+                                    disndag: 15:00-23:00
+                                </li>
+                                <li>
+                                    woensdag: 15:00-23:00
+                                </li>
+                                <li>
+                                    donderdag: 15:00-23:00
+                                </li>
+                                <li>
+                                    vrijdag: 15:00-23:00
+                                </li>
+                                <li>
+                                    zaterdag: 12:00-23:00
+                                </li>
+                                <li>
+                                    zondag: gesloten
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 col-sm-6 text-center mt-5 col-xl-6 gone">
+                        <div class="card" style="max-width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-Stitle underline">Frikandel</h5>
+                            </div>
+                            <img src="img/snackbar.jpg" class="card-img-top" alt="..." style="max-height: 177px;">
+                        </div>
+                    </div>
+                    <!-- our open and closing times -->
+<!--                     <div class="col-md-4 bg-info contact">
+                        <div class="col-md-12">
+                            <h1>Openings tijden</h1>
+                        </div>
+                        <div class="col-md-12 text-justify">
+                            <ul>
+                                <li>
+                                    maandag: 15:00-23:00
+                                </li>
+                                <li>
+                                    disndag: 15:00-23:00
+                                </li>
+                                <li>
+                                    woensdag: 15:00-23:00
+                                </li>
+                                <li>
+                                    donderdag: 15:00-23:00
+                                </li>
+                                <li>
+                                    vrijdag: 15:00-23:00
+                                </li>
+                                <li>
+                                    zaterdag: 12:00-23:00
+                                </li>
+                                <li>
+                                    zondag: gesloten
+                                </li>
+                            </ul>
+                        </div>                    
+                    </div> -->
+                    <!-- Cards for contact in different locations -->
+                    <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                        <div class="card" style="width: 18rem; height: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Rotterdam</h5>
+                                <ul class="mt-5">
+                                    <li><b>Straat: </b>Bertstraat</li>
+                                    <li><b>Postcode: </b>1234AB</li>
+                                    <li><b>Nummer: </b>15</li>   
+                                    <li><b>Telefoon: </b>067789956</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-block btn-info">neem contact</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                        <div class="card" style="width: 18rem; height: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Amsterdam</h5>
+                                <ul class="mt-5">
+                                    <li><b>Straat: </b>Gerdastraat</li>
+                                    <li><b>Postcode: </b>1234AC</li>
+                                    <li><b>Nummer: </b>23</li>
+                                    <li><b>Telefoon: </b>067789967</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-block btn-info">neem contact</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                        <div class="card" style="width: 18rem; height: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Utrecht</h5>
+                                <ul class="mt-5">
+                                    <li><b>Straat: </b>henkstraat</li>
+                                    <li><b>Postcode: </b>234AD</li>
+                                    <li><b>Nummer: </b>21</li>
+                                    <li><b>Telefoon: </b>067789977</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-block btn-info">neem contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>  
+        </div>
+        <!-- Create empty space below contact -->
+        <div class="row" style="min-height: 10vh;"></div>
+        <!-- footer -->
+        <div class="fixed-bottom navBackground">
+            <div class="col-sm-12 text-center" style="min-height: 50px;">
+                <h4 class="mt-3">SnackShop - De vetste</h4>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
 </html>
+

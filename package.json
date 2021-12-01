@@ -4,10 +4,11 @@
   "description": "frontend-dev",
   "main": "app.js",
   "scripts": {
-    "all": "npm-run-all -p sass tsc browser-sync",
+    "all": "npm-run-all -p sass tsc",
     "tsc": "tsc",
     "sass": "sass ./scss/:./css/ --watch",
-    "browser-sync": "browser-sync start --config bs-config.js"
+    "browser-sync": "browser-sync start --config bs-config.js",
+    "gc": "bash script.sh"
   },
   "author": "steven",
   "license": "ISC",

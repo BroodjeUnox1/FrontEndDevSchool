@@ -1,16 +1,71 @@
-nav, a, li {
-  background: red;
+.underline {
+  border-bottom: 2px solid black;
 }
 
-li {
-  color: blue;
-  background: white;
-  border-radius: 2px;
+.mt-10 {
+  margin-top: 120px;
 }
 
-a {
-  background: green;
-  border-radius: 7px;
+body {
+  background-color: rgba(218, 247, 166, 0.8);
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+.background {
+  background: #DAF7A6;
+}
+
+.navBackground {
+  background: #ededed;
+}
+
+h1 {
+  color: #FF5733;
+}
+
+.card {
+  margin: 0 auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 10px;
+  /* Added */
+  /*width: 18rem;*/
+  height: 18rem;
+}
+
+.container-bg {
+  background: #daf7a6;
+}
+
+nav {
+  font-size: 2rem;
+  padding: 0px 16px;
+}
+
+.contact {
+  min-height: 15rem;
+  max-height: 15rem;
+}
+
+/*@media screen and (max-width: 1199px) {
+  .contact {
+    font-size: 11px;
+  }
+}*/
+/*@media screen and (max-width: 766px) {
+  .contact {
+    font-size: 15px;
+  }
+}*/
+.mw-4rem {
+  max-width: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.gone {
+  display: none;
+}

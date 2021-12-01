@@ -1,23 +1,62 @@
-$backgroundColor: #878f99;
-$textColor: #b2ad7f;
-$text: #a2b9bc;
-@mixin rounded($px) {
-    border-radius: $px; 
+.underline {
+    border-bottom: 2px solid black;
+}
+
+.mt-10 {
+    margin-top: 120px;
+}
+
+body {
+    background-color: rgba(218, 247, 166, 80%)/*#DAF7A6*/;
+    overflow-x: hidden;
+}
+
+.background {
+    background: #DAF7A6;
+}
+
+.navBackground {
+    background: #ededed;
+}
+
+h1 {
+    color: #FF5733;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    width: 18rem; 
+    height: 18rem;
+}
+
+.container-bg {
+    background: rgba(218, 247, 166, 100%);
 }
 
 nav {
-  background: red;
+    font-size: 2rem;
+    padding: 0px 16px;
 }
 
-li {
-    @extend nav;
-    color: blue;
-    background: white;
-    @include rounded(2px);
+.contact {
+  min-height: 15rem;
+  max-height: 15rem;
 }
 
-a {
-    @extend nav;
-    background: green;
-    @include rounded(7px);
+@media screen and (max-width: 1199px) {
+  .contact {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .contact {
+    font-size: 15px;
+  }
+}
+
+.mw-4rem {
+    max-width: 4rem;
 }
